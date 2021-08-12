@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  background: #111;
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  transition: all 0.3s linear;
+  font-weight: 200;
+  box-shadow: 0 5px 20px black;
+}
+
+.link-text {
+  color: gold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.navigate {
+  margin: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.page {
+  background-color: #222;
+  height: 100vh;
+}

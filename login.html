@@ -14,30 +14,35 @@
 
       <div class="login_items">
         <div class="log-form">
-          <form action="" method="POST">
+          <form
+            action="https://thawing-shelf-98370.herokuapp.com/auth"
+            method="POST"
+          >
             <div class="form-item">
               <div class="Enter">Username</div>
               <div class="input-head"></div>
-              <div class="input"><input id="info" type="text" /></div>
+              <div class="input"><input id="Username" type="text" /></div>
             </div>
 
             <div class="form-item">
               <div class="Enter">Email</div>
               <div class="input-head"></div>
-              <div class="input"><input id="info" type="text" /></div>
+              <div class="input"><input id="Email" type="text" /></div>
             </div>
 
             <div class="form-item">
               <div class="Enter">Password</div>
               <div class="input-head"></div>
-              <div class="input"><input id="info" type="text" /></div>
+              <div class="input"><input id="Password" type="password" /></div>
             </div>
+
             <div class="btn">
-              <button>login</button>
+              <button onclick="login()" type="submit">login</button>
             </div>
           </form>
         </div>
       </div>
     </div>
+    <script src="login.js"></script>
   </body>
 </html>
