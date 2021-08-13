@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
 .navbar-links {
   display: flex;
   list-style-type: none;
-  background: #111;
+  background: rgb(0, 0, 50);
   position: fixed;
   width: 100vw;
   height: 10vh;
@@ -18,11 +19,11 @@
   font-family: sans-serif;
   transition: all 0.3s linear;
   font-weight: 200;
-  box-shadow: 0 5px 20px black;
+  box-shadow: 0 5px 20px rgb(0, 0, 50);
 }
 
 .link-text {
-  color: gold;
+  color: rgb(255, 50, 0);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
@@ -35,7 +36,62 @@
   gap: 30px;
 }
 
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
 .page {
-  background-color: #222;
-  height: 100vh;
+  background-color: rgb(255, 50, 0);
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 5px rgb(0, 0, 50);
+  flex-direction: column;
+  margin: 10px;
+  height: 300px;
+  width: 200px;
+  color: rgb(0, 0, 50);
+}
+
+.product-name {
+  padding: 20px;
+}
+
+.product-price {
+  padding: 20px;
+}
+
+.product-amount {
+  padding: 20px;
+}
+
+.add-btn {
+  background-color: rgb(255, 50, 0);
+  outline: none;
+  border: none;
+  box-shadow: 0 5px 5px rgb(0, 0, 50);
+  padding: 10px;
+  color: rgb(0, 0, 50);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: black;
 }

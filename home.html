@@ -23,7 +23,35 @@
       </nav>
     </div>
 
-    <div class="page"></div>
+    <div class="page"><div id="container"></div></div>
+
+    <div>
+      <form class="form">
+        <input
+          type="text"
+          name="prod_name"
+          id="productName"
+          required
+          placeholder="Product name"
+        />
+        <input
+          type="text"
+          name="prod_price"
+          id="Price"
+          required
+          placeholder="Product price"
+        />
+        <input
+          type="text"
+          name="amount"
+          id="quantity"
+          required
+          placeholder="Amount"
+        />
+        <button type="submit" onclick="add()">ADD</button>
+      </form>
+    </div>
+
     <script src="./products.js"></script>
   </body>
 </html>
