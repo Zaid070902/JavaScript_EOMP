@@ -67,19 +67,24 @@ function add() {
   let name = document.getElementById("productName").value;
   let price = document.getElementById("Price").value;
   let quantity = document.getElementById("quantity").value;
+  console.log(document.getElementById("productName").value);
 
-  fetch("https://thawing-shelf-98370.herokuapp.com/create-blogs/", {
-    method: "POST",
-    body: JSON.stringify({
-      prod_name: name,
-      prod_price: price,
-      amount: quantity,
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8",
-      Authorization: `jwt ${storage.getItem("jwt-token")}`,
-    },
-  })
+  fetch(
+    "https://thawing-shelf-98370.herokuapp.com/create-blogs/",
+    { mode: "no-cors" },
+    {
+      method: "POST",
+      body: JSON.stringify({
+        prod_name: name,
+        prod_price: price,
+        amount: quantity,
+      }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+        Authorization: `jwt ${storage.getItem("jwt-token")}`,
+      },
+    }
+  )
     .then((response) => response.json())
     .then((json) => console.log(json));
 }
