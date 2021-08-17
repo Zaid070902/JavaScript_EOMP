@@ -48,7 +48,9 @@
           required
           placeholder="Amount"
         />
-        <button type="submit" onclick="add()">ADD</button>
+        <button type="submit" onclick="event.preventDefault(), add()">
+          ADD
+        </button>
       </form>
     </div>
 

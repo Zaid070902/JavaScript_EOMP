@@ -45,7 +45,7 @@ function renderproducts(products) {
         </div>
 
         <div class="Delete">
-        <button class="del-btn">DELETE</button>
+        <button class="del-btn" onclick="del()")>DELETE</button>
         </div>
 
 
@@ -54,8 +54,12 @@ function renderproducts(products) {
 }
 
 function del() {
-  fetch("https://thawing-shelf-98370.herokuapp.com/get-blogs/", {
+  fetch("https://thawing-shelf-98370.herokuapp.com/delete-post/", {
     method: "DELETE",
+    headers: {
+      "Content-type": "application/json; charset=UTF-8",
+      Authorization: `jwt ${storage.getItem("jwt-token")}`,
+    },
   });
 }
 
